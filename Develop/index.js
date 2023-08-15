@@ -27,7 +27,7 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'contribution/resources',
+        name: 'contribution',
         message: 'Please provide the names or links of any contributors/resources that assisted in the making of this application.',
     },
     {
@@ -38,11 +38,26 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) { }
+function writeToFile(fileName, data) { 
+    fs.writeFile(fileName, generateMarkdown(data), function(error) {
+        if(error) {
+            console.log(error)
+        }
+        else {
+            console.log('Here is your README')
+        }
+    })
+}
+
 
 // TODO: Create a function to initialize app
-function init() { }
-return inquirer.prompt(questions);
+function init() { 
+    return inquirer.prompt(questions).then((data) => {
+        writeToFile("sample-README.md", data);
+      });
+}
+
 
 // Function call to initialize app
 init();
+
