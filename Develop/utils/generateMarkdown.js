@@ -1,7 +1,4 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
-
-const { default: ListPrompt } = require("inquirer/lib/prompts/list");
-
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
 if (license === 'mit') {
@@ -11,9 +8,7 @@ if (license === 'mit') {
   } else if (license === 'gpl-3.0') {
     return `[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`;
   } else if (license === 'none'){
-    return "N/A";
-  } else {
-    return "";
+    return "No license were used";
   }
 } 
 
@@ -34,12 +29,14 @@ function generateMarkdown(data) {
 
  ## Table of Contents
  - [Description](#description)
+ - [License](#license)
  - [Installation](#installation)
  - [Usage](#usage)
- - [Contributions/Resources](#contribution)
- - [Test](#test)
+ - [Contributions/Resources](#contributions)
+ - [Testing](#testing)
+ - [Questions](#questions)
 
- ## Badges
+ ## License
 ${renderLicenseBadge(data.license)}
 
  ## Description
@@ -51,11 +48,16 @@ ${renderLicenseBadge(data.license)}
  ## Usage
  ${data.usage}
 
- ## Contributions/Resources
+ ## Contributions
+ 
  ${data.contribution}
 
- ## Test
+ ## Testing
  ${data.test}
+
+ ## Questions
+
+ If you have any questions feel free to visit my [GitHub](https://github.com/${data.githubUser}) or [Email](mailto:${data.email}) me!
 
 `
 }

@@ -5,12 +5,14 @@
 
  ## Table of Contents
  - [Description](#description)
+ - [License](#license)
  - [Installation](#installation)
  - [Usage](#usage)
- - [Contributions/Resources](#contribution)
+ - [Contributions](#contributions)
  - [Test](#test)
+ - [Questions](#contact-me)
 
- ## Badges
+ ## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
  ## Description
@@ -22,9 +24,13 @@
  ## Usage
  
 
- ## Contributions/Resources
+ ## Contributions 
  
 
  ## Test
  
+
+ ## Contact me
+
+ If you have any questions feel free to look me up on [GitHub](https://github.com/) or [Email](mailto:) me!
 
