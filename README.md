@@ -5,7 +5,7 @@
  - [Installation](#installation)
  - [Usage](#usage)
  - [Contributions/Resources](#contributions)
- - [Video](#Video)
+ - [Video](#video)
  - [Screenshot](#screenshot)
  - [Testing](#testing)
  - [Questions](#questions)
