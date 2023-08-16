@@ -35,17 +35,19 @@ const questions = [
         name: 'test',
         message: 'What are the steps on testing the application ?',
     },
+    {
+        type: 'list',
+        name: 'license',
+        message: 'What license did you use?',
+        choices: ['mit','apache-2.0','gpl-3.0', 'none'],
+    },
+
 ];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) { 
     fs.writeFile(fileName, generateMarkdown(data), function(error) {
-        if(error) {
-            console.log(error)
-        }
-        else {
-            console.log('Here is your README')
-        }
+        error ? console.log(error) : console.log('README.md file was successfully created!')
     })
 }
 
