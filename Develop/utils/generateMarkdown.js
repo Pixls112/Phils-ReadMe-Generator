@@ -40,7 +40,7 @@ function generateMarkdown(data) {
  - [Test](#test)
 
  ## Badges
-${renderLicenseBadge()}
+${renderLicenseBadge(data.license)}
 
  ## Description
  ${data.description}
