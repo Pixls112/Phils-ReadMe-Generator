@@ -1,5 +1,4 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+//This fucntion is used to display a license badge on README.md depending on userinput from prompt
 function renderLicenseBadge(license) {
   if (license === 'mit') {
     return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`;
@@ -12,15 +11,14 @@ function renderLicenseBadge(license) {
   }
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+
+// This function was not needed
 function renderLicenseLink(license) { }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+// This function was no needed
 function renderLicenseSection(license) { }
 
-// TODO: Create a function to generate markdown for README
+// This function is used to generate markdown for README using data from index.js
 function generateMarkdown(data) {
   return `# ${data.title}
   ## Description
